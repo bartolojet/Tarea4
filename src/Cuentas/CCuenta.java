@@ -1,5 +1,12 @@
 package Cuentas;
 
+/**
+ * Clase cuenta, permite ingresar y retirar una cantidad
+ *
+ * @author barto
+ * @version 1.0
+ * @since 1.0
+ */
 public class CCuenta {
 
 
@@ -8,6 +15,12 @@ public class CCuenta {
     private double saldo;
     private double tipoInteres;
 
+    /**
+     * @param nom
+     * @param cue
+     * @param sal
+     * @param tipo
+     */
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
         setNombre(nom);
@@ -20,6 +33,10 @@ public class CCuenta {
         return getSaldo();
     }
 
+    /**
+     * @param cantidad
+     * @throws Exception
+     */
     public void ingresar(double cantidad) throws Exception
     {
         if (cantidad<0)
